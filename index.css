@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  
+}
+
+
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+  height: 100vh; /* <-- Agrega esto */
+  
+}
+
+
+.section:not(#saludo) {
+  background-color: #222; /* Fondo sólido para las demás secciones */
+}
+
+#proyectos {
+  background: linear-gradient(180deg, #181818 60%, #181818 100%);
+ 
+}
+
+#sobre_mi {
+  background: linear-gradient(180deg, #131313 40%, #afafaf 100%);
+}
+
+#contacto {
+  background: linear-gradient(180deg, #000000 80%, #131313 100%);
+}
+
+/*Estilo de la seccion saludo*/
+
+.contenedorSaludo{
+  background-color:#1A0E05;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+.fotocvSaludo{
+  display: grid;
+  background-color:#1A0E05;
+  grid-column: 1;
+  grid-row: 1;
+  grid-template-rows: 70% 30%;
+  grid-template-columns: 1fr;
+}
+.imagenRosaura{
+  margin: auto auto;
+  grid-column: 1;
+  grid-row: 1;
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+}
+.btnDescargarCV{
+  grid-column: 1;
+  grid-row: 2;
+  width: 200PX;
+  height: 50PX;
+  border: 2px solid #ff6600;
+  color:#F0E6DA;
+  font-family:Stardos Stencil;
+  font-size:25px ;
+  background-color: #1A0E05;
+  margin: 0 auto;
+
+}
+.infoSaludo{
+  display: grid;
+  background-color:#1A0E05;
+  grid-column: 2;
+  grid-row: 1;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 20% 40%;
+  justify-items: center;
+  align-items: center;
+}
+.tituloSaludo{
+  box-sizing: border-box;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+  height: auto;
+  width: 80%;
+ 
+}
+.tituloSaludo h1{
+ color: #E95C00;
+ font-family:Stardos Stencil;
+ font-size: 5vw;
+ 
+}
+.tituloSaludo h2{
+ color: #E2A946;
+ font-family:Stardos Stencil;
+font-size: 5vw;
+}
+
+
+.btnsSaludo{
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  gap:1rem;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  height: auto;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 820px) {
+  .btnsSaludo {
+    box-sizing: border-box;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:700px) {
+  .contenedorSaludo{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+
+  .fotocvSaludo{
+      grid-column: 1;
+      grid-row: 2;
+      height: 40vh;
+      grid-template-columns:repeat(2,1fr) ;
+      grid-template-rows: 1fr;
+  }
+  .infoSaludo{
+      grid-column: 1;
+      grid-row: 1;
+      height: 60vh;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+
+  }
+  .imagenRosaura{
+      width: 200px;
+      height: 200px;
+      grid-column: 1;
+      grid-row: 1;
+      margin: auto auto;
+      margin-top: 0;
+
+  }
+  .btnDescargarCV{
+    grid-column: 2;
+    grid-row: 1;
+    margin: auto auto;
+  }
+  
+}
+
+
+.btn{
+   box-sizing: border-box;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-family:Stardos Stencil;
+  display: grid;
+  grid-template-columns: auto 1fr; /*Divicion entre el icono y el texto del boton*/
+  width: 150px;
+  height: 40px;
+  border: 2px solid #ff6600;
+  color:#F0E6DA;
+  align-items: center;
+  justify-items:center ;
+  border-radius: 5%;
+  text-decoration: none;
+  padding: 2%;
+
+}
+
+.icono{
+  place-items: center;
+  width: 100%;
+  height: 80%;
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+#iconoLinkedin{
+  width: 100%;
+  height: 80%;
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: contain;
+  filter: none;
+}
+ 
+.textSaludo{
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+  font-size:1.5rem ;
+  text-align: center;
+  padding: 3%;
+  font-size: 90%;
+}
+
+
+/*Estilo de la seccion experiencia*/
+.contenedorExperiencia{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color:#1A0E05;
+}
+
+.tituloExp{
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  color: #E95C00;;
+  font-family:Stardos Stencil;
+  justify-items: center;
+
+}
+.lineaTiempo{
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-columns: 45% 10% 45%;
+  grid-template-rows: 20% 20% 20% 20%;
+   position: relative;
+}
+
+.infoLinea {
+  padding: 1rem;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color:#1A0E05;
+
+}
+
+.izquierda {
+  grid-column: 1;
+  justify-items: right;
+}
+
+.derecha {
+  grid-column: 3;
+}
+
+.iconoLinea {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.punto {
+  width: 20px;
+  height: 20px;
+  background-color: #e67240;
+  border-radius: 50%;
+  z-index: 2;
+  border: 2px solid white;
+}
+
+
