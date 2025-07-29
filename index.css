@@ -293,6 +293,7 @@ font-size: 5vw;
   border-radius: 8px;
   font-size: 14px;
   background-color:#1A0E05;
+  
 
 }
 
@@ -311,6 +312,7 @@ font-size: 5vw;
   justify-content: center;
   align-items: center;
   position: relative;
+  
 }
 
 .punto {
@@ -320,6 +322,7 @@ font-size: 5vw;
   border-radius: 50%;
   z-index: 2;
   border: 2px solid white;
+  margin-top: -3rem;
 }
 
 /* Estilo para la seccion  proyectos */
@@ -557,6 +560,7 @@ font-size: 5vw;
   width: 24px;
   height: 24px;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 @media (max-width: 600px) {
